@@ -39,18 +39,7 @@ img{
     margin-right: auto;
 }
 
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;  
-}
+
 
 /* ============ Header  ============ */
 .page-header-container {
@@ -252,7 +241,6 @@ padding: 0 15px;
     flex-wrap: wrap;
 }
 
-/* desctop */
 .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
 }
@@ -288,28 +276,81 @@ padding: 0 15px;
 /* ============ Our Team  ============ */
 
 
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    text-align: center;
+}
 
+.section-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+}
 
+.team-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
 
+.team-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
 
+.section-team {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
-
-
-
-
+.section-list-item {
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
 
 .team-information {
     padding: 32px 0;
 }
 
+.social-list {
+    
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .social-list:hover,
 .social-list:focus {
     background-color: #404bbf;
 }
 
-.social-section-list {
+.social-section-lis {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -349,10 +390,9 @@ padding: 0 15px;
 }
 
 .portfolio-list {
-    display: flex; 
-    flex-wrap: wrap;
+    display: flex;
     column-gap: 24px;
-   
+    flex-wrap: wrap;
     row-gap: 48px;
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -433,9 +473,7 @@ padding: 0 15px;
     max-width: 264px;
     padding-top: 16px;
     
-}
-
-
+ }
  .footer {
     background-color: #2e2f42;
     padding: 100px 0;
@@ -461,6 +499,7 @@ padding: 0 15px;
 }
 
 .social-footer-link {
+    display: block;
     fill: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -479,6 +518,7 @@ padding: 0 15px;
 }
 
 .footer-container{
+    display: flex;
     flex-direction: row;
     align-items: baseline;
 }
@@ -589,8 +629,8 @@ padding: 0 15px;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background-color:  #fcfcfc;
-    width: 288px;
-    height: 623px;
+    width: 408px;
+    height: 584px;
     min-height: 584px;
     border-radius: 4px;
     padding-top: 72px;
